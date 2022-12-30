@@ -1,0 +1,275 @@
+
+fprintf("            AND GATE    \n")
+for i=1:5  
+    for j=1:33
+        fprintf("*")
+    end                         
+    fprintf("\n")
+    
+    if i==1
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 0   |")
+        d1=AND(0,0);
+        fprintf("   ")
+        fprintf("%d   |",d1)
+        fprintf("\n")
+    elseif i==2
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 1   |")
+        d2=AND(0,1);
+        fprintf("   ")
+        fprintf("%d   |",d2)
+        fprintf("\n")
+    elseif  i==3
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 0   |")
+        d3=AND(1,0);
+        fprintf("   ")
+        fprintf("%d   |",d3)
+        fprintf("\n")
+    elseif i==4
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 1   |")
+        d4=AND(1,1);
+        fprintf("   ")
+        fprintf("%d   |",d4)
+        fprintf("\n")
+
+    end
+end
+fprintf("\n")
+fprintf("\n");
+
+    fprintf("            OR GATE    \n")
+for i=1:5  
+    for j=1:33
+        fprintf("-")
+    end                         
+    fprintf("\n")
+    
+    if i==1
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 0   |")
+        d1=OR(0,0);
+        fprintf("   ")
+        fprintf("%d   |",d1)
+        fprintf("\n")
+    elseif i==2
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 1   |")
+        d2=OR(0,1);
+        fprintf("   ")
+        fprintf("%d   |",d2)
+        fprintf("\n")
+    elseif  i==3
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 0   |")
+        d3=OR(1,0);
+        fprintf("   ")
+        fprintf("%d   |",d3)
+        fprintf("\n")
+    elseif i==4
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 1   |")
+        d4=OR(1,1);
+        fprintf("   ")
+        fprintf("%d   |",d4)
+        fprintf("\n")
+
+    end
+end
+fprintf("\n");
+fprintf("\n");
+
+
+    fprintf("            NAND GATE    \n")
+for i=1:5  
+    for j=1:33
+        fprintf("-")
+    end                         
+    fprintf("\n")
+    
+    if i==1
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 0   |")
+        d1=NAND(0,0);
+        fprintf("   ")
+        fprintf("%d   |",d1)
+        fprintf("\n")
+    elseif i==2
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 1   |")
+        d2=NAND(0,1);
+        fprintf("   ")
+        fprintf("%d   |",d2)
+        fprintf("\n")
+    elseif  i==3
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 0   |")
+        d3=NAND(1,0);
+        fprintf("   ")
+        fprintf("%d   |",d3)
+        fprintf("\n")
+    elseif i==4
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 1   |")
+        d4=NAND(1,1);
+        fprintf("   ")
+        fprintf("%d   |",d4)
+        fprintf("\n")
+
+    end
+end
+
+fprintf("\n");
+fprintf("\n");
+
+    fprintf("            NOR GATE    \n")
+for i=1:5 
+    for j=1:33
+        fprintf("-")
+    end                         
+    fprintf("\n")
+    
+    if i==1
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 0   |")
+        d1=NOR(0,0);
+        fprintf("   ")
+        fprintf("%d   |",d1)
+        fprintf("\n")
+    elseif i==2
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 1   |")
+        d2=NOR(0,1);
+        fprintf("   ")
+        fprintf("%d   |",d2)
+        fprintf("\n")
+    elseif  i==3
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 0   |")
+        d3=NAUR(1,0);
+        fprintf("   ")
+        fprintf("%d   |",d3)
+        fprintf("\n")
+    elseif i==4
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 1   |")
+        d4=NOR(1,1);
+        fprintf("   ")
+        fprintf("%d   |",d4)
+        fprintf("\n")
+
+    end
+end
+
+fprintf("\n");
+fprintf("\n");
+
+    fprintf("            XOR GATE    \n")
+for i=1:5 
+    for j=1:33
+        fprintf("-")
+    end                         
+    fprintf("\n")
+    
+    if i==1
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 0   |")
+        d1=XOR(0,0);
+        fprintf("   ")
+        fprintf("%d   |",d1)
+        fprintf("\n")
+    elseif i==2
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 1   |")
+        d2=XOR(0,1);
+        fprintf("   ")
+        fprintf("%d   |",d2)
+        fprintf("\n")
+    elseif  i==3
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 0   |")
+        d3=XOR(1,0);
+        fprintf("   ")
+        fprintf("%d   |",d3)
+        fprintf("\n")
+    elseif i==4
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 1   |")
+        d4=XOR(1,1);
+        fprintf("   ")
+        fprintf("%d   |",d4)
+        fprintf("\n")
+
+    end
+end
+
+
+fprintf("\n");
+fprintf("\n");
+
+    fprintf("            XNOR GATE    \n")
+for i=1:5 
+    for j=1:33
+        fprintf("-")
+    end                         
+    fprintf("\n")
+    
+    if i==1
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 0   |")
+        d1=XNOR(0,0);
+        fprintf("   ")
+        fprintf("%d   |",d1)
+        fprintf("\n")
+    elseif i==2
+        fprintf("|")
+        fprintf("   A = 0   |")
+        fprintf("   B = 1   |")
+        d2=XNOR(0,1);
+        fprintf("   ")
+        fprintf("%d   |",d2)
+        fprintf("\n")
+    elseif  i==3
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 0   |")
+        d3=XNOR(1,0);
+        fprintf("   ")
+        fprintf("%d   |",d3)
+        fprintf("\n")
+    elseif i==4
+                fprintf("|")
+        fprintf("   A = 1   |")
+        fprintf("   B = 1   |")
+        d4=Xnor(1,1);
+        fprintf("   ")
+        fprintf("%d   |",d4)
+        fprintf("\n")
+
+    end
+end
+fprintf("\n");fprintf("\n");
+end

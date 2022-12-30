@@ -1,0 +1,12 @@
+function [D0,D1,D2,D3] = DMUX1_4(I,S1,S0)
+o1=NOT(S1);
+o2=NOT(S0);
+D01=AND(o1,o2);
+D0=AND(D01,I)
+D11=AND(o1,S0);
+D1=AND(D11,I)
+D21=AND(S1,o2);
+D2=AND(D21,I)
+D31=AND(S1,S0);
+D3=AND(D31,I)
+end
